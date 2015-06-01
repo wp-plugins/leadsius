@@ -60,7 +60,7 @@ If you do not yet have an account, you can [signup free here](http://app.leadsiu
 
 = Do you have to be a Leadsius user to use this plugin? =
 
-Yes. You can sign up for free at Leadsius.com
+Yes. You can sign up for free at [Leadsius.com](http://www.leadsius.com/ "Leadsius")
 
 = What should I do if I already have the Leadsius tracking script embedded within my website? =
 
