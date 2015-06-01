@@ -13,7 +13,7 @@ Leadsius for WordPress allows you to seamlessly integrate your existing WordPres
 
 The Leadsius WordPress plugin allows all Leadsius users to seamlessly integrate their existing WordPress websites and blogs with Leadsius in order to boost conversion rates and drive in more business.
 
-If you do not yet have an account, you can [signup free here] (http://app.leadsius.com/register/)
+If you do not yet have an account, you can [signup free here](http://app.leadsius.com/register/ "register leadsius")
 
 **Benefits**
 
@@ -33,12 +33,12 @@ If you do not yet have an account, you can [signup free here] (http://app.leadsi
 2. Search for “Leadsius” and install “Leadsius for WordPress”
 3. Once installed, click on “Leadsius” in your WordPress sidebar menu and go to “Settings”
 4. Add your Leadsius API token to WordPress theme
-* Login to Leadsius and go to Settings > API
-* Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
-* Copy the API key and paste it into your WordPress plugin settings 
+    * Login to Leadsius and go to Settings > API
+    * Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
+    * Copy the API key and paste it into your WordPress plugin settings
 5. Add your System Key
-* Login to Leadsius and go to Settings > Account info
-* Copy the system key and paste it into your WordPress plugin settings
+    * Login to Leadsius and go to Settings > Account info
+    * Copy the system key and paste it into your WordPress plugin settings
 6. Click “Save changes” in your WordPress settings and you’re ready to go.
 
 (manually via FTP)
@@ -48,12 +48,12 @@ If you do not yet have an account, you can [signup free here] (http://app.leadsi
 3. Activate Leadius plugin via the ‘Plugins’ menu in WordPress 
 4. Once installed, click on “Leadsius” in your WordPress sidebar menu and go to “Settings”
 5. Add your Leadsius API token to WordPress theme
-* Login to Leadsius and go to Settings > API
-* Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
-* Copy the API key and paste it into your WordPress plugin settings 
+    * Login to Leadsius and go to Settings > API
+    * Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
+    * Copy the API key and paste it into your WordPress plugin settings
 6. Add your System Key
-* Login to Leadsius and go to Settings > Account info
-* Copy the system key and paste it into your WordPress plugin settings
+    * Login to Leadsius and go to Settings > Account info
+    * Copy the system key and paste it into your WordPress plugin settings
 7. Click “Save changes” in your WordPress settings and you’re ready to go.
 
 == Frequently Asked Questions ==
@@ -68,7 +68,7 @@ You should remove the Leadsius tracking script from all pages of your website be
 
 = Is there any information written as a guide? =
 
-Yes. You can [download the Leadsius for WordPress user guide here] (http://support.leadsius.com/solution/categories/158616/folders/3000006417/articles/3000033999-download-pdf-guide)
+Yes. You can [download the Leadsius for WordPress user guide here](http://support.leadsius.com/solution/categories/158616/folders/3000006417/articles/3000033999-download-pdf-guide "download guide")
 
 == Screenshots ==
 
