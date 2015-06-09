@@ -44,7 +44,7 @@ If you do not yet have an account, you can [signup free here](http://app.leadsiu
 (manually via FTP)
 
 1. Delete any previously created ‘Leadsius’ folder from the ‘/wp-content/plugins/’ directory
-2. Upload ‘Leadsius’ zip file to the ‘/wp-content/plugins/’ directory
+2. Upload ‘Leadsius’ zip file to the ‘/wp-content/plugins/’ directory. [Click here to download the zip file.](http://www.leadsius.com/leadsius-wp-plugin-final-1.0.zip)
 3. Activate Leadius plugin via the ‘Plugins’ menu in WordPress 
 4. Once installed, click on “Leadsius” in your WordPress sidebar menu and go to “Settings”
 5. Add your Leadsius API token to WordPress theme
