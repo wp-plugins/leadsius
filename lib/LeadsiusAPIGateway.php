@@ -40,6 +40,8 @@ class LeadsiusAPIGateway {
 
         if ( isset($this->allForms->webforms) && is_array($this->allForms->webforms) )
         {
+
+
             foreach( $this->allForms->webforms as $webform )
             {
 
@@ -49,13 +51,13 @@ class LeadsiusAPIGateway {
 
 
                     $formData = isset($webform->form_data) ? $webform->form_data : $this->getForm($formId);
-                    //var_dump($formData);die();
+                    //var_dump($formData->json_customization);die();
                     $trackingPixel=$formData->tracking_pixel;
 
 
 
 
-                    if(isset($webform->customization)){
+                    if(isset($webform->customization) && strlen($formData->json_customization)==0){
 
                         $customization = json_decode($webform->customization);
                         //var_dump($customization->wf_button_text);die();
@@ -89,7 +91,7 @@ class LeadsiusAPIGateway {
                     else{
 
                         $new_custom = json_decode($formData->json_customization);
-
+                        //var_dump($new_custom);die();
                         if($new_custom->button_name == "")
                             $buttonText='Submit';
                         else{
@@ -98,7 +100,7 @@ class LeadsiusAPIGateway {
                         }
                     }
 
-
+                    //var_dump($buttonText);die();
                     //$buttonText = 'submit';
 
 
@@ -112,7 +114,7 @@ class LeadsiusAPIGateway {
 
 
                     $formulario = '';
-                    if (isset($webform->html_content)){
+                    if (isset($webform->html_content) && strlen($webform->json_content)==0){
 
                         $formulario = $webform->html_content;
                     }
@@ -251,6 +253,7 @@ class LeadsiusAPIGateway {
                         $toappend.=' </form>';
                         $toappend.=$json_custom->custom_css.$json_custom->custom_js;
                         $formulario = $toappend;
+
 
 
 
