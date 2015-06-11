@@ -3,7 +3,7 @@ Contributors: fegasLs
 Tags: marketing automation, widget, plugin
 Requires at least: 4.1.1
 Tested up to: 4.1.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,8 @@ Tips: When creating a page like this to convert visitors into known leads, make 
 
 == Changelog ==
 
+= 1.0.1 =
+* Security update.
 
 = 1.0 =
 * First public version.
