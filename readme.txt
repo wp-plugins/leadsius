@@ -3,7 +3,7 @@ Contributors: fegasLs
 Tags: marketing automation, widget, plugin
 Requires at least: 4.1.1
 Tested up to: 4.1.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,9 @@ Tips: When creating a page like this to convert visitors into known leads, make 
 4. In the example above you will notice a simple, single-field form used to generate blog subscription registrations. Sometimes less truly is more when it comes to the amount of fields used within your web form.
 
 == Changelog ==
+
+= 1.0.2 =
+* Security update.
 
 = 1.0.1 =
 * Security update.

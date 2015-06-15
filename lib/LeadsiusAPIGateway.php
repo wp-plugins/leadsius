@@ -13,6 +13,10 @@ class LeadsiusAPIGateway {
     public function getAllForms()
     {
         $this->allForms = $this->makeAPICall('webforms.json');
+        if($this->allForms->total > $this->allForms->page_size){
+
+            $this->allForms = $this->makeAPICall('webforms.json',($this->allForms->page_size*$this->allForms->total_pages));
+        }
 
         return $this->allForms;
     }
@@ -268,14 +272,18 @@ class LeadsiusAPIGateway {
         return null;
     }
 
-    private function makeAPICall($action)
+    private function makeAPICall($action,$page_size=null)
     {
-        $url = sprintf('https://api.leadsius.com/%s?api_key=%s&page_size=40', $action, $this->token);
+        if($page_size!=null)
+            $page_size='&page_size='.$page_size;
+        $url = sprintf('https://api.leadsius.com/%s?api_key=%s%s', $action, $this->token,$page_size);
         //$url = sprintf('http://localhost/leadsius-api/web/app_dev.php/%s?api_key=%s&page_size=40', $action, $this->token);
 
         $ctx = stream_context_create( array('https'=> array( 'timeout' => 15 ) ));
 
         $res = @file_get_contents( $url, false, $ctx );
+
+
         if($res==null)
         {
             $curl = curl_init($url);
