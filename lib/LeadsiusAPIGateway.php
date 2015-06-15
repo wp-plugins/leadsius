@@ -13,6 +13,10 @@ class LeadsiusAPIGateway {
     public function getAllForms()
     {
         $this->allForms = $this->makeAPICall('webforms.json');
+        if($this->allForms->total > $this->allForms->page_size){
+
+            $this->allForms = $this->makeAPICall('webforms.json',($this->allForms->page_size*$this->allForms->total_pages));
+        }
 
         return $this->allForms;
     }
@@ -40,6 +44,8 @@ class LeadsiusAPIGateway {
 
         if ( isset($this->allForms->webforms) && is_array($this->allForms->webforms) )
         {
+
+
             foreach( $this->allForms->webforms as $webform )
             {
 
@@ -49,13 +55,13 @@ class LeadsiusAPIGateway {
 
 
                     $formData = isset($webform->form_data) ? $webform->form_data : $this->getForm($formId);
-                    //var_dump($formData);die();
+                    //var_dump($formData->json_customization);die();
                     $trackingPixel=$formData->tracking_pixel;
 
 
 
 
-                    if(isset($webform->customization)){
+                    if(isset($webform->customization) && strlen($formData->json_customization)==0){
 
                         $customization = json_decode($webform->customization);
                         //var_dump($customization->wf_button_text);die();
@@ -89,7 +95,7 @@ class LeadsiusAPIGateway {
                     else{
 
                         $new_custom = json_decode($formData->json_customization);
-
+                        //var_dump($new_custom);die();
                         if($new_custom->button_name == "")
                             $buttonText='Submit';
                         else{
@@ -98,7 +104,7 @@ class LeadsiusAPIGateway {
                         }
                     }
 
-
+                    //var_dump($buttonText);die();
                     //$buttonText = 'submit';
 
 
@@ -112,7 +118,7 @@ class LeadsiusAPIGateway {
 
 
                     $formulario = '';
-                    if (isset($webform->html_content)){
+                    if (isset($webform->html_content) && strlen($webform->json_content)==0){
 
                         $formulario = $webform->html_content;
                     }
@@ -255,6 +261,7 @@ class LeadsiusAPIGateway {
 
 
 
+
                     }
 
                     return str_replace( '</form>', '<div class="spinner" style="display:none"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>'.$buttonHtml . $webformIdField . ' </form>'.'<img class="ls-tracker" src="'.$trackingPixel.'" />', $formulario );
@@ -265,14 +272,18 @@ class LeadsiusAPIGateway {
         return null;
     }
 
-    private function makeAPICall($action)
+    private function makeAPICall($action,$page_size=null)
     {
-        $url = sprintf('https://api.leadsius.com/%s?api_key=%s&page_size=40', $action, $this->token);
+        if($page_size!=null)
+            $page_size='&page_size='.$page_size;
+        $url = sprintf('https://api.leadsius.com/%s?api_key=%s%s', $action, $this->token,$page_size);
         //$url = sprintf('http://localhost/leadsius-api/web/app_dev.php/%s?api_key=%s&page_size=40', $action, $this->token);
 
         $ctx = stream_context_create( array('https'=> array( 'timeout' => 15 ) ));
 
         $res = @file_get_contents( $url, false, $ctx );
+
+
         if($res==null)
         {
             $curl = curl_init($url);
