@@ -757,6 +757,19 @@ label.control-label.required {
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
     height: 42px;
 }
+
+
+.insights-cta-widget.widget-form label.ls-required:after{
+
+    content:' *';
+
+}
+
+.insights-cta-widget.widget-form label.ls-required:after{
+
+    content:' *';
+
+}
 .insights-cta-widget.widget-form .form-result {
     font-size: 12px;
     line-height: 14px;
