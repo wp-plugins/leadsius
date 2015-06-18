@@ -3,7 +3,7 @@
 Plugin Name: Leadsius - Wordpress Plugin
 Description: WP-Leadsius is a WordPress plugin which integrates Leadsius and WordPress.
 With WP-Leadsius you can add Leadsius tracking script to your Wordpress site as well as creating web forms and call-to-actions.
-Version: 1.0.3
+Version: 1.0.3.2
 Author: Leadsius AB
 */
 

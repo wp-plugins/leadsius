@@ -86,6 +86,12 @@ Tips: When creating a page like this to convert visitors into known leads, make 
 
 == Changelog ==
 
+= 1.0.3.2 =
+* Layout update.
+
+= 1.0.3.1 =
+* Layout update.
+
 = 1.0.3 =
 * Layout update.
 
