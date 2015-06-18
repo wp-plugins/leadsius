@@ -135,6 +135,12 @@ class LeadsiusAPIGateway {
                         for($i=0;$i<count($json);$i++)
                         {
 
+                            $required_class="";
+                            if(property_exists($json[$i],'validator-required')){
+
+                                $required_class="ls-required";
+                            }
+
                             if(property_exists($json[$i],'description')){
 
                                 if($json[$i]->description=='undefined' || $json[$i]->description=='' || $json[$i]->description==null)
@@ -155,7 +161,7 @@ class LeadsiusAPIGateway {
                             else if ($json[$i]->type=='textInput' || (property_exists($json[$i],'root_type') && $json[$i]->root_type=='textInput'))
                             {
 
-                                $toappend .= '<div class="ls-form-group"> <label for="'.$json[$i]->name.'" class="fb-required">'.$json[$i]->label.'</label><div><input name="'.$json[$i]->name.'" type="text"';
+                                $toappend .= '<div class="ls-form-group"> <label for="'.$json[$i]->name.'" class="fb-required '.$required_class.'">'.$json[$i]->label.'</label><div><input name="'.$json[$i]->name.'" type="text"';
 
                                 if(property_exists($json[$i],'validator-error')){
 
@@ -172,7 +178,7 @@ class LeadsiusAPIGateway {
                             {
 
 
-                                $toappend .= '<div class="ls-form-group"> <label for="'.$json[$i]->name.'" class="fb-required">'.$json[$i]->label.'</label><div><textarea name="'.$json[$i]->name.'" type="text" validator-required="'.$json[$i]->{'validator-required'}.'" ';
+                                $toappend .= '<div class="ls-form-group"> <label for="'.$json[$i]->name.'" class="fb-required '.$required_class.'">'.$json[$i]->label.'</label><div><textarea name="'.$json[$i]->name.'" type="text" validator-required="'.$json[$i]->{'validator-required'}.'" ';
                                 if(property_exists($json[$i],'validator-error')){
 
                                     $toappend.=' validator-error="'.$json[$i]->{'validator-error'}.'"';
@@ -225,7 +231,7 @@ class LeadsiusAPIGateway {
                                         $opts .= '<div class="checkbox"> <label class=""><input name="'.$json[$i]->name.'" type="checkbox"  value="'.$json[$i]->options[$h].'" class="">'.$json[$i]->options[$h].'</label> </div>';
 
                                 }
-                                $toappend .= '<div class="ls-form-group"> <label for="'.$json[$i]->name.'" class="checkbox_label">'.$json[$i]->label.'</label> <div class=""> <input type="hidden" ';
+                                $toappend .= '<div class="ls-form-group"> <label for="'.$json[$i]->name.'" class="checkbox_label '.$required_class.'">'.$json[$i]->label.'</label> <div class=""> <input type="hidden" ';
                                 if(property_exists($json[$i],'validator-error')){
 
                                     $toappend.=' validator-error="'.$json[$i]->{'validator-error'}.'"';
