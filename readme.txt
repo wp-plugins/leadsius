@@ -3,7 +3,7 @@ Contributors: fegasLs
 Tags: marketing automation, widget, plugin
 Requires at least: 4.1.1
 Tested up to: 4.1.1
-Stable tag: 1.0
+Stable tag: 1.0.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Leadsius for WordPress allows you to seamlessly integrate your existing WordPres
 
 The Leadsius WordPress plugin allows all Leadsius users to seamlessly integrate their existing WordPress websites and blogs with Leadsius in order to boost conversion rates and drive in more business.
 
-If you do not yet have an account, you can [signup free here] (http://app.leadsius.com/register/)
+If you do not yet have an account, you can [signup free here](http://app.leadsius.com/register/ "register leadsius")
 
 **Benefits**
 
@@ -33,34 +33,34 @@ If you do not yet have an account, you can [signup free here] (http://app.leadsi
 2. Search for “Leadsius” and install “Leadsius for WordPress”
 3. Once installed, click on “Leadsius” in your WordPress sidebar menu and go to “Settings”
 4. Add your Leadsius API token to WordPress theme
-* Login to Leadsius and go to Settings > API
-* Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
-* Copy the API key and paste it into your WordPress plugin settings 
+    * Login to Leadsius and go to Settings > API
+    * Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
+    * Copy the API key and paste it into your WordPress plugin settings
 5. Add your System Key
-* Login to Leadsius and go to Settings > Account info
-* Copy the system key and paste it into your WordPress plugin settings
+    * Login to Leadsius and go to Settings > Account info
+    * Copy the system key and paste it into your WordPress plugin settings
 6. Click “Save changes” in your WordPress settings and you’re ready to go.
 
 (manually via FTP)
 
 1. Delete any previously created ‘Leadsius’ folder from the ‘/wp-content/plugins/’ directory
-2. Upload ‘Leadsius’ zip file to the ‘/wp-content/plugins/’ directory
+2. Upload ‘Leadsius’ zip file to the ‘/wp-content/plugins/’ directory. [Click here to download the zip file.](http://www.leadsius.com/leadsius-wp-plugin-final-1.0.zip)
 3. Activate Leadius plugin via the ‘Plugins’ menu in WordPress 
 4. Once installed, click on “Leadsius” in your WordPress sidebar menu and go to “Settings”
 5. Add your Leadsius API token to WordPress theme
-* Login to Leadsius and go to Settings > API
-* Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
-* Copy the API key and paste it into your WordPress plugin settings 
+    * Login to Leadsius and go to Settings > API
+    * Create a new API key and assign it to a user. Make sure the checkbox is marked "Enabled"
+    * Copy the API key and paste it into your WordPress plugin settings
 6. Add your System Key
-* Login to Leadsius and go to Settings > Account info
-* Copy the system key and paste it into your WordPress plugin settings
+    * Login to Leadsius and go to Settings > Account info
+    * Copy the system key and paste it into your WordPress plugin settings
 7. Click “Save changes” in your WordPress settings and you’re ready to go.
 
 == Frequently Asked Questions ==
 
 = Do you have to be a Leadsius user to use this plugin? =
 
-Yes. You can sign up for free at Leadsius.com
+Yes. You can sign up for free at [Leadsius.com](http://www.leadsius.com/ "Leadsius")
 
 = What should I do if I already have the Leadsius tracking script embedded within my website? =
 
@@ -68,7 +68,7 @@ You should remove the Leadsius tracking script from all pages of your website be
 
 = Is there any information written as a guide? =
 
-Yes. You can [download the Leadsius for WordPress user guide here] (http://support.leadsius.com/solution/categories/158616/folders/3000006417/articles/3000033999-download-pdf-guide)
+Yes. You can [download the Leadsius for WordPress user guide here](http://support.leadsius.com/solution/categories/158616/folders/3000006417/articles/3000033999-download-pdf-guide "download guide")
 
 == Screenshots ==
 
@@ -86,6 +86,23 @@ Tips: When creating a page like this to convert visitors into known leads, make 
 
 == Changelog ==
 
+= 1.0.3.3 =
+* Layout update.
+
+= 1.0.3.2 =
+* Layout update.
+
+= 1.0.3.1 =
+* Layout update.
+
+= 1.0.3 =
+* Layout update.
+
+= 1.0.2 =
+* Security update.
+
+= 1.0.1 =
+* Security update.
 
 = 1.0 =
 * First public version.
