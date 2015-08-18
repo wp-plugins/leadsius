@@ -11,9 +11,9 @@ Leadsius for WordPress allows you to seamlessly integrate your existing WordPres
 
 == Description ==
 
-The Leadsius WordPress plugin allows all Leadsius users to seamlessly integrate their existing WordPress websites and blogs with Leadsius in order to boost conversion rates and drive in more business.
+The Leadsius WordPress plugin allows all Leadsius users with a premium account to seamlessly integrate their existing WordPress websites and blogs with Leadsius in order to boost conversion rates and drive in more business.
 
-If you do not yet have an account, you can [signup free here](http://app.leadsius.com/register/ "register leadsius")
+If you do not yet have an account, you can [signup free here](http://app.leadsius.com/register/ "register leadsius"). *Please note that you will need a premium account to gain access to this plugin.
 
 **Benefits**
 
@@ -60,7 +60,7 @@ If you do not yet have an account, you can [signup free here](http://app.leadsiu
 
 = Do you have to be a Leadsius user to use this plugin? =
 
-Yes. You can sign up for free at [Leadsius.com](http://www.leadsius.com/ "Leadsius")
+In order to take advantage of this plugin, you'll have to have a premium Leadsius account. You can [get started with Leadsius here!](http://www.leadsius.com/ "Leadsius")
 
 = What should I do if I already have the Leadsius tracking script embedded within my website? =
 
